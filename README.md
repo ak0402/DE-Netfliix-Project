@@ -150,4 +150,4 @@ Working on this end-to-end Netflix project provided hands-on exposure to **real-
 ---
 
 ## 👤 Author
-Project implemented by **Mansi Matekar**
+Project implemented by **Akhilesh Kadam**
