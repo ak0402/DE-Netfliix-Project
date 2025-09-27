@@ -1,0 +1,31 @@
+{
+    "name": "ds_github",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "github_con",
+            "type": "LinkedServiceReference"
+        },
+        "parameters": {
+            "file_name": {
+                "type": "string"
+            }
+        },
+        "annotations": [],
+        "type": "DelimitedText",
+        "typeProperties": {
+            "location": {
+                "type": "HttpServerLocation",
+                "relativeUrl": {
+                    "value": "Mansi-Matekar/NetflixProject/refs/heads/master/RawData_AND_Notebooks/@{dataset().file_name}",
+                    "type": "Expression"
+                }
+            },
+            "columnDelimiter": ",",
+            "escapeChar": "\\",
+            "firstRowAsHeader": true,
+            "quoteChar": "\""
+        },
+        "schema": []
+    },
+    "type": "Microsoft.DataFactory/factories/datasets"
+}
